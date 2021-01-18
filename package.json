@@ -1,5 +1,5 @@
 {
-  "name": "liebre",
+  "name": "exit",
   "version": "1.0.0",
   "description": "Proyecto Individual DH-1",
   "main": "app.js",
@@ -16,7 +16,6 @@
     "url": "https://github.com/CarliFP/Liebre/issues"
   },
   "homepage": "https://github.com/CarliFP/Liebre#readme",
-  
   "dependencies": {
     "express": "^4.17.1"
   },
