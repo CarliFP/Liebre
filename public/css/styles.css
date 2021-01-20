@@ -6,6 +6,7 @@
 body {
     font-size: 12px; 
     font-family: roboto; 
+    background:  #ebebeb; 
 }
 
 p {
@@ -25,6 +26,9 @@ header {
 .burger-menu i {
     color: white; 
     background: #1259c3;
+    font-size: 25px; 
+    padding: 5px; 
+    border-radius: 5px;
 }
 
 .burger-menu {
@@ -54,6 +58,8 @@ footer {
     text-align: center;
     padding-top: 15px; 
     padding-bottom: 20px; 
+    color: black;
+    background: white; 
 }
 
 #icon-footer {
