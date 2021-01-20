@@ -3,21 +3,20 @@
 body {
     font-size: 12px; 
     font-family: roboto; 
-};
-
-header {
-    background-color:  #EAC926;
 }
 
+header {
+    background: #EAC926;
+}
 
 h3 {
     font-size: 24px; 
-};
+}
 
 #precio {
     font-size: 18px;
-};
+}
 
 #descuento #descripcion {
     font-size: 16px; 
-}; 
+} 
