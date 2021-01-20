@@ -1,13 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+
+/* BODY */
+
 body {
     font-size: 12px; 
     font-family: roboto; 
 }
 
+p {
+    font-size: 12px; 
+}
+
+/*HEADER*/
+
 header {
     background: #EAC926;
 }
+
+#icon-nav-bar {
+    color: #1259c3; 
+}
+
+.burger-menu i {
+    color: white; 
+    background: #1259c3;
+}
+
+.burger-menu {
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    text-align: center;
+}
+
+
+/*MAIN*/
 
 h3 {
     font-size: 24px; 
@@ -20,3 +47,21 @@ h3 {
 #descuento #descripcion {
     font-size: 16px; 
 } 
+
+/*FOOTER*/
+
+footer {
+    text-align: center;
+    padding-top: 15px; 
+    padding-bottom: 20px; 
+}
+
+#icon-footer {
+    color: #1259c3;
+    font-size: 2em; 
+    margin-bottom: 10px; 
+}
+
+.copyright {
+    text-align: left; 
+}
