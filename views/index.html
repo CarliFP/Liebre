@@ -5,22 +5,27 @@
     <meta charset="utf-8">
     <!--Load viewport-->
     <!--meta name= "viewport" content= "width=device-wid th, initial-scale=1"-->
+
     <title>Proyecto Individual- DH Nº 1- "Mercado-Liebre"</title>
+
     <!--Css styles-->
     <link href ="css/styles.css" rel="stylesheet">
+
     <!-- Load icon library -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <!--el link sugerido en el playground no me funciono: href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" -->
     <!--<script src="https://kit.fontawesome.com/17c2d4139d.js" crossorigin="anonymous"></script> : solo con este script también funciona -->
-
-
+    
+    <!--link para la fuente Roboto-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">    
 </head>
 
 <body>
 
     <header>
          <!--container logo-->
-            <div class="container-login-bar" id="login-bar">
+            <div class="container-logo-nav-bar" id="logo-nav-bar">
             <img id="logo" src="./img/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
             </div>
 
@@ -31,7 +36,7 @@
             </form>
         
         <!--start navbar-->
-        <nav class="navbar" id="nav">
+        <nav class="navbar">
 
             <span class =“medios-pago”><i id= "icon-nav-bar" class= "fas fa-hand-holding-usd"></i>
             </span>
@@ -39,7 +44,7 @@
             </span> 
                
         <!--nav list-->
-            <ul id= "lista-de-nav">
+            <ul class= "lista-de-nav">
                 <li>
                     <a href="#">Ofertas</a>
                 </li>
@@ -71,6 +76,10 @@
     </header>
 
     <main>
+
+        <div class = "home-banner">
+            <img src="./img/img-home-banner.jpg" alt="Cafetera moulinex">
+        </div>
 
         <section class="section-ultima-busqueda">
 

@@ -1,4 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/* GENERAL —>
+<!— COLORES: Amarillo: #EAC926;
+ Azul: #03264C; Celeste: #1259c3; 
+Gris oscuro: #666; 
+Gris claro: #ebebeb; 
+Verde: #39b54a; —>
+
+<!— Tipografías Familia: 'Roboto' 
+Nos envían esta demo de cómo cargar fuentes de Google Fonts. Además podemos consultar el siguiente recurso aquí , para más detalle. —>
+
+
+<!—  Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+ Precios: 18px
+ Descuentos: 16px
+ Descripciones: 16px —>
+
+<! —FOOTER —>
+<!—El contenido de todos los artículos está centrado.�Los íconos tienen un tamaño de 2em y un margen inferior de 
+separación de 10 píxeles —> */
 
 
 /* BODY */
@@ -13,36 +33,37 @@ p {
     font-size: 12px; 
 }
 
+h3 {
+    font-size: 24px; 
+}
+
 /*HEADER*/
 
 header {
     background: #EAC926;
 }
 
-#icon-nav-bar {
+ header #icon-nav-bar {
     color: #1259c3; 
+    font-size: 2em;
 }
 
-.burger-menu i {
+ header .burger-menu i {
     color: white; 
     background: #1259c3;
     font-size: 25px; 
-    padding: 5px; 
+    padding: 15px; 
     border-radius: 5px;
 }
 
-.burger-menu {
+   header .burger-menu {
     padding-top: 10px; 
     padding-bottom: 10px; 
     text-align: center;
 }
 
 
-/*MAIN*/
-
-h3 {
-    font-size: 24px; 
-}
+/*MAIN/SECTION/ARTICLE */
 
 #precio {
     font-size: 18px;
@@ -62,7 +83,7 @@ footer {
     background: white; 
 }
 
-#icon-footer {
+ #icon-footer {
     color: #1259c3;
     font-size: 2em; 
     margin-bottom: 10px; 
