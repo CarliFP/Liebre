@@ -4,17 +4,7 @@
 Gris oscuro: #666; 
 Gris claro: #ebebeb; 
 Verde: #39b54a; —>
-<!— Tipografías Familia: 'Roboto' -->
-<!—  Tamaños Tipográficos
-Cuerpos de texto: 12px
-Titulares (Basado en tu última visita/Ofertas): 24px
- Precios: 18px
- Descuentos: 16px
- Descripciones: 16px —>
-
-<! —FOOTER —>
-<!—El contenido de todos los artículos está centrado.Los íconos tienen un tamaño de 2em y un margen inferior de 
-separación de 10 píxeles —> */
+-->
 
 
 /* BODY */
@@ -26,7 +16,7 @@ separación de 10 píxeles —> */
 
 body {
     font-size: 12px; 
-    font-family: roboto;  
+    font-family: 'Roboto';   
     background:  #ebebeb; 
     color:  #666;
 }
@@ -52,44 +42,46 @@ h4 {
 /*HEADER*/
 
 
-header {
+.header-main {
     background: #EAC926;
+    padding: 20px;
 }
 
-.container-logo img {
-    width: 50%; 
+.logo img {
+    width: 200px; 
 }
 
-
-.burger-menu i {
-    color: white; 
-    background: #1259c3;
-    font-size: 15px; 
-    padding: 8px; 
-    border-radius: 5px;
-}
-
-.burger-menu {
-    padding-top: 10px; 
-    padding-bottom: 10px; 
+.copy-header {
+    font-weight: 400;
     text-align: center;
 }
 
-.lista-nav i {
-    padding-left: 3px;
-}
-
-.lista-nav {
-    padding-bottom: 10px;
-}
-
-.container-logo {
-    width: 100%;
-}
-
-.navbar-subtitle {
-    padding-top: 10px; 
+.burger-menu {
+    color: white; 
+    background: #1259c3;
+    display: block;
+    max-width: 50px;
     text-align: center; 
+    font-size: 17px;
+    padding: 15px 0; 
+    border-radius: 8px;
+    margin: auto;
+}
+
+/* NAV-BAR FLEX*/
+
+.main-nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav-bar a {
+text-decoration: none;
+color: #222222;
+display: inline-block;
+padding: 5px 0;
+font-size: 17px; 
 }
 
 
@@ -176,15 +168,37 @@ article{
 @media (min-width: 769px) {
 
     /* DESKTOP */
-
-   article {
+article {
     box-shadow : 0px 0px 10px rgb(100, 100, 100);
 }
 
 .burger-menu {
     display: none; 
 }
-  
+
+.main-header-top-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy-header {
+    max-width: 350px;
+    text-align: right;
+}
+
+.main-nav-bar {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.main-nav-bar ul{
+    display: flex;
+}
+
+.main-nav-bar li {
+    margin: 0 15px;
+}
+
 
 }
 
@@ -194,7 +208,7 @@ article{
         display: none; 
     }
 
-    .lista-nav {
+    .main-nav-bar {
         display: none; 
     }
         

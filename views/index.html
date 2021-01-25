@@ -24,60 +24,49 @@
 
 <body>
 
-    <header>
-        <!--container logo-->
-            <div class="container-logo">
+    <header class="header-main">
+        
+         <!--LOGO/SEARCH NAV BAR--> 
+        <nav class= "main-header-top-bar">
             <img src="./img/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
-            </div>
-
-        <!--space for search-bar--> 
+        
+            <!--SPACE FOR SEARCH NAV-BAR--> 
             <form class="search-bar" action="#">
                 <input type="text" placeholder="Buscar productos, marcas..." name="search">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </form>
-        
-        <!--start navbar-->
-        <nav>
+           
+            <h2 class= "copy-header">
+                 <i class= "fas fa-hand-holding-usd"></i>
+                Compra en cuota y con tarjeta de crédito
+            </h2> 
+        </nav>
 
-            <div class="navbar-subtitle">
-                <span><i class= "fas fa-hand-holding-usd"></i>
-            </span>
-            <span>Compra en cuota y con tarjeta de crédito
-            </span> 
-            </div>
+         <!--BURGER BUTTOM--> 
+      
+        <a href="#" class ="burger-menu"><i class = "fa fa-bars burger"></i></a>
 
-        <!--nav list-->
-            <ul class= "lista-nav">
-                <li>
-                    <a href="#">Ofertas</a>
-                </li>
-                <li>
-                    <a href="#">Tiendas Oficiales</a>
-                </li>
-                <li>
-                    <a href="#">Vender</a>
-                </li>
-                <li>
-                    <a href="#">Ayuda</a>
-                </li>
-                <li>
-                    <a href="#">Creá tu cuenta</a><i class="far fa-address-card"></i>
-                </li>
-                <li>
-                    <a href="#">Ingresá</a><i class="fas fa-sign-in-alt"></i>
-                </li>
-                <li>
-                    <a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i>
-                </li>
+          <!--NAV-BAR-LIST--> 
+        <nav  class= "main-nav-bar">
+
+            <ul class= "left-navbar">
+                <li> <a href="#">Ofertas</a></li>
+                <li> <a href="#">Tiendas Oficiales</a></li>
+                <li> <a href="#">Vender</a></li>
+                <li> <a href="#">Ayuda</a></li>
             </ul>
 
-                <div class ="burger-menu">
-                    <i class = "fa fa-bars burger"></i>
-                </div>
+            <ul class="right-navbar">
+                <li> <a href="#">Creá tu cuenta</a><i class="far fa-address-card"></i></li>
+                <li> <a href="#">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+                <li> <a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+            </ul>
+
         </nav>
-         <!-- end navbar-->
+
     </header>
 
+            <!--BANNER--> 
             <div class = "home-banner">
              <img src="./img/img-home-banner.jpg" alt="Cafetera moulinex">
                  </div>
