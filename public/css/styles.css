@@ -4,11 +4,7 @@
 Gris oscuro: #666; 
 Gris claro: #ebebeb; 
 Verde: #39b54a; —>
-
-<!— Tipografías Familia: 'Roboto' 
-Nos envían esta demo de cómo cargar fuentes de Google Fonts. Además podemos consultar el siguiente recurso aquí , para más detalle. —>
-
-
+<!— Tipografías Familia: 'Roboto' -->
 <!—  Tamaños Tipográficos
 Cuerpos de texto: 12px
 Titulares (Basado en tu última visita/Ofertas): 24px
@@ -17,78 +13,189 @@ Titulares (Basado en tu última visita/Ofertas): 24px
  Descripciones: 16px —>
 
 <! —FOOTER —>
-<!—El contenido de todos los artículos está centrado.�Los íconos tienen un tamaño de 2em y un margen inferior de 
+<!—El contenido de todos los artículos está centrado.Los íconos tienen un tamaño de 2em y un margen inferior de 
 separación de 10 píxeles —> */
 
 
 /* BODY */
 
+* {
+ box-sizing: border-box;
+ margin: 0; 
+}
+
 body {
     font-size: 12px; 
-    font-family: roboto; 
+    font-family: roboto;  
     background:  #ebebeb; 
+    color:  #666;
 }
 
 p {
     font-size: 12px; 
 }
 
-h3 {
+h2 {
     font-size: 24px; 
+    padding-top: 15px; 
 }
 
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px; 
+}
+
+
 /*HEADER*/
+
 
 header {
     background: #EAC926;
 }
 
- header #icon-nav-bar {
-    color: #1259c3; 
-    font-size: 2em;
+.container-logo img {
+    width: 50%; 
 }
 
- header .burger-menu i {
+
+.burger-menu i {
     color: white; 
     background: #1259c3;
-    font-size: 25px; 
-    padding: 15px; 
+    font-size: 15px; 
+    padding: 8px; 
     border-radius: 5px;
 }
 
-   header .burger-menu {
+.burger-menu {
     padding-top: 10px; 
     padding-bottom: 10px; 
     text-align: center;
 }
 
-
-/*MAIN/SECTION/ARTICLE */
-
-#precio {
-    font-size: 18px;
+.lista-nav i {
+    padding-left: 3px;
 }
 
-#descuento #descripcion {
-    font-size: 16px; 
+.lista-nav {
+    padding-bottom: 10px;
+}
+
+.container-logo {
+    width: 100%;
+}
+
+.navbar-subtitle {
+    padding-top: 10px; 
+    text-align: center; 
+}
+
+
+/*BANNER*/
+
+.home-banner img {
+    width: 100%;
+    margin: 0 auto; 
 } 
+
+
+/*MAIN*/
+
+main {
+    width: 90%;
+    margin: 0 auto;  
+}
+
+/*ARTICLE*/
+
+article {
+    margin: 20px auto;  
+    width: 100%;
+    background-color: white; 
+}
+
+.main-article { 
+    background-color: white;
+    padding: 15px; 
+    border-top: solid 1px #ebebeb;
+}
+
+main article img {
+    width: 100%; 
+}
 
 /*FOOTER*/
 
 footer {
     text-align: center;
-    padding-top: 15px; 
-    padding-bottom: 20px; 
-    color: black;
+    margin: 0px auto;
     background: white; 
+    width: 100%; 
 }
 
- #icon-footer {
+.section-footer i {
     color: #1259c3;
     font-size: 2em; 
-    margin-bottom: 10px; 
+    margin-bottom: 20px; 
+}
+
+.section-footer {
+    padding-top: 20px; 
+    margin: 20px 20px;
 }
 
 .copyright {
     text-align: left; 
+    padding: 5px; 
+}
+
+.p-footer {
+   padding-top: 10px; 
+}
+
+
+/* MEDIA QUERIS*/
+
+@media (min-width: 361px) {
+
+    /*TABLET*/
+
+article{
+    box-shadow : 0px 0px 10px rgb(100, 100, 100);
+}
+
+.burger-menu {
+    display: none; 
+}
+  
+
+}
+
+@media (min-width: 769px) {
+
+    /* DESKTOP */
+
+   article {
+    box-shadow : 0px 0px 10px rgb(100, 100, 100);
+}
+
+.burger-menu {
+    display: none; 
+}
+  
+
+}
+
+@media (max-width: 480px) {
+
+    .main-article {
+        display: none; 
+    }
+
+    .lista-nav {
+        display: none; 
+    }
+        
 }
