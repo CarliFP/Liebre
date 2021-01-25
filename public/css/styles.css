@@ -213,3 +213,38 @@ article {
     }
         
 }
+
+@media (min-width: 1200 px) {
+
+    .logo {
+        width: 250px;
+    }
+
+    .main-header-top-bar, .main-nav-bar {
+        max-width: 1200px;
+        margin: auto; 
+    }
+
+    .main-header-top-bar {
+        align-items: center;
+    }
+
+    .main-nav-bar {
+        margin-top: 40px;
+    }
+
+    .main-nav-bar li{
+        margin: 0 10px; 
+
+    }
+    .main-nav-bar  a{
+       font-size: 19px; 
+        
+    }
+    .copy-header {
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0; 
+    }
+}
