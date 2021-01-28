@@ -32,6 +32,7 @@ Mis compras */
 * {
  box-sizing: border-box;
  margin: 0; 
+ padding: 0; 
 }
 
 body {
@@ -120,6 +121,7 @@ main {
     margin: 0 auto;  
 }
 
+
 /*ARTICLE*/
 
 article {
@@ -137,6 +139,25 @@ article {
 main article img {
     width: 100%; 
 }
+
+main article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px; 
+    width: 30px;
+    height: 30px;
+    color: #39b54a; 
+    border: 1px solid #39b54a;
+    position: absolute;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+}
+/*position: absolute: eliminado*/
+
+
+
 
 /*FOOTER*/
 
