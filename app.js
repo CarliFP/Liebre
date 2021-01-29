@@ -15,6 +15,7 @@ app.listen (8000, () => {
 app.get('/', (req, res) => {
     //res.sendFile(path.join(__dirname, '/views/index.html'));
     res.sendFile(path.resolve('./views/index.html'));
+    res.sendFile(path.resolve('./views/login.html'));
     //otra forma: console.log(path.join(__dirname, '/public/hola.html'))
     //console.log("A: "+__dirname+"/views/index.html")
     //console.log("B: /Users/cfpons/Desktop/Liebre/views/index.html")
