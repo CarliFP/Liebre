@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Formularios</title>
+</head>
+<body>
+    
 </form action="/registro method="">
 <div>
     <label>
@@ -5,35 +14,38 @@
     </label>
 </div>
 <div>
-    <label for="nombre">Nombre y apellido:</label>
-    <input id="nombre" type="text" name="nombreUsuario" required>
+    <label for="name">Nombre y apellido:</label>
+    <input id="name" type="text" name="name" required>
 </div>
 
 <div>
-    <label for ="usuario">Nombre de usuario:</label>
-    <input id="nombre" type="text" name="nombreUsuario">
+    <label for ="user">Nombre de usuario:</label>
+    <input id="usuario" type="text" name="user">
 </div>
 
 <div>
-    <label>Fecha de nacimiento:</label>
-    <input type="text" name="nombreUsuario">
+    <label for="date">Fecha de nacimiento:</label>
+    <input type="date" name="fecha" value="2021-07-22" min="1900-01-01" max="2022-12-31">
 </div>
 
 <div>
-    <label>Domicilio:</label>
-    <input type="text" name="nombreUsuario">
+    <label for= "direction">Domicilio:</label>
+    <input id="direction" type="text" name="direction">
 </div>
 
 <div>
-    <label>Contraseña:</label>
-    <input type="password" name="passwordUsuario">
+    <label for="password">Contraseña:</label>
+    <input id="direction" type="password" name="password">
 </div>
 
 <div>
-    <label>Correo Electrónico:</label>
-    <input type="text" name="emailUsuario">
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" name="emailUsuario" name="email" required>
 </div>
 
 <button type="submit">Enviar</button>
 
 </form>
+
+</body>
+</html>

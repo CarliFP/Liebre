@@ -98,29 +98,46 @@ main {
 
 /*NAV-BAR-TOP*/
 
-.search-bar {
-    border: 0 white;
-    border-radius: 4px;
-    height: 25px; 
-    width: 130px; 
-    margin-top: 5px; 
-    margin-left: 10px;
-    padding: 2px; 
+.container-logo {
+    width: 50%; 
+}
+
+.container-search-bar {
+   background: white; 
+   border-radius: 4px; 
+   width: 50%; 
+   height: 30px; 
+}
+
+.search-bar{
+    position: relative;
+}
+
+.container-search-bar button{
+    position:absolute;
+    right: 8px;
+}
+
+.search-bar-input {
+    border: 0 white;  
+    width: 100px;
+    margin-top: 8px;
+    margin-left: 5px; 
 }
 
 button i {
     color: #666666;
 }
 
-button {
-    border-radius:4px; 
+button { 
     border: white; 
     background: white;
-    height: 20px;
-    width: 20px;  
+    margin-top: 5px; 
 }
 
+
 .copy-header {
+    display:inline-block;   
     font-weight: 300;
     text-align: center;
     font-size: 14px;
@@ -129,10 +146,24 @@ button {
 }
 
 
+.main-header-top-bar {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+.container-copy-header {
+    width: 100%; 
+}
+
+.container-copy-header .copy-header{
+    width: 100%; 
+}
+
 /* NAV-BAR BOTTOM*/
 
 .logo {
-    width: 200px; 
+    width: 150px; 
 }
 
 .main-nav-bar ul {
@@ -286,29 +317,35 @@ footer {
 @media (min-width: 768px) {
     /*DESKTOP*/
 
-    .search-bar {
-        border: 1px rgb(100, 100, 100); 
-        box-shadow : 0px 0px 10px rgb(100, 100, 100);
-        height: 25px; 
-        width: 130px; 
-        margin-top: 5px; 
-        margin-left: 10px;
+    .search-bar-input {
+        border: 0.5px solid #666666;   
+        width: 170px;
+        padding: 3px 3px 3px 3px; 
     }
     
+
+    .search-bar{
+        position: initial;
+    }
+
+    .search-bar-input {
+        width: calc(100% - 30px);
+        margin-top: 8px;
+        margin-left: 5px; 
+    }
+    
+    .container-search-bar button{
+        position: initial;
+    }
+    
+
     button i {
-        color: #666666;
+        border: 0.5px solid #666666;
+        padding: 3px 3px 3px 3px;  
+        background:  #ebebeb;
     }
     
-    button {
-        border-radius:4px; 
-        border: white; 
-        background: white;
-        height: 20px;
-        width: 20px;  
-    }
-    
-
-
+  
     article {
         width: 22%; 
     }
@@ -322,11 +359,29 @@ footer {
         justify-content: space-between;
     }
     
+    .container-copy-header {
+        width: 33%; 
+    }
+
     .copy-header {
-        max-width: 350px;
         text-align: right;
+        padding-right: 20px;
     }
     
+    .logo {
+        width: 200px; 
+    }
+
+    .container-logo {
+        width: 33%; 
+    }
+
+    .container-search-bar {
+        width: 33%; 
+        background: none;
+        margin-top: 11px
+    }
+
     .main-nav-bar {
         display: flex; 
         justify-content: space-between;
