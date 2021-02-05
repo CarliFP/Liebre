@@ -42,27 +42,30 @@ body {
     color:  #666;
 }
 
+/*Cuerpo de texto*/
 p {
     font-size: 12px; 
 }
 
+/*titulares*/
 h2 {
     font-size: 24px; 
     padding-top: 15px; 
     padding-left: 10px; 
 }
 
+/*precios*/
 h3 {
     font-size: 18px;
 }
 
+/*descuentos/descripciones*/
 h4 {
     font-size: 16px; 
 }
 
 
 /*MAIN*/
-
 main {
     width: 90%;
     margin: 0 auto;  
@@ -70,16 +73,12 @@ main {
 
 
 /*HEADER*/
-
-
 .header-main {
     background: #EAC926;
     padding: 20px;
 }
 
-
 /*BURGER MENU*/
-
 .burger-menu {
     color: white; 
     background: #1259c3;
@@ -92,11 +91,7 @@ main {
     margin: auto;
 }
 
-
 /*NAV-BAR*/
-
-
-/*NAV-BAR-TOP*/
 
 .container-logo {
     width: 50%; 
@@ -135,7 +130,6 @@ button {
     margin-top: 5px; 
 }
 
-
 .copy-header {
     display:inline-block;   
     font-weight: 300;
@@ -144,7 +138,6 @@ button {
     padding-top: 20px; 
     padding-bottom: 30px; 
 }
-
 
 .main-header-top-bar {
     display: flex;
@@ -222,7 +215,6 @@ article {
     flex-wrap: wrap;
 }
 
-
 main article img {
     width: 100%; 
 }
@@ -231,7 +223,7 @@ main article i {
     display: block;
     position: absolute; 
     font-size: 13px;
-    padding: 5px; 
+    padding: 7px; 
     width: 30px;
     height: 30px;
     color: #39b54a; 
@@ -239,14 +231,11 @@ main article i {
     background-color: #FFF;
     border-radius: 50%;
     right: 20px;
-    top: -15px;
-    
+    top: -15px;   
 }
 
 .product {
     display: none; 
-    font-weight: 300; 
-    padding: 8px; 
 }
 
 .disc {
@@ -256,7 +245,6 @@ main article i {
     width: 50%;
    
 }
-
 .price {
     padding: 5px; 
     width: 50%; 
@@ -267,22 +255,23 @@ main article i {
 footer {
     background: white; 
     width: 100%; 
-    margin-bottom: 20px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: absolute; 
 }
 
 .section-footer i {
     color: #1259c3;
     font-size: 2em; 
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
 }
 
 .section-footer {
     text-align: center; 
-    padding-top: 20px; 
+    padding-top: 10px; 
     display: flex;
+    position: relative;  
     flex-direction: column;
     justify-content: center;
     /*margin: 20px 20px;*/
@@ -290,7 +279,9 @@ footer {
 
 .copyright {
     text-align: left; 
-    padding: 5px; 
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-bottom: 8px; 
 }
 
 .p-footer {
@@ -302,14 +293,9 @@ footer {
 @media (min-width: 361px) {
     /*TABLET*/
 
+    /*BOX x 2*/
     article {
-        box-shadow : 0px 0px 10px rgb(100, 100, 100);
         width: 45%; 
-    }
-
-    .product {
-        display: block 
-
     }
 
 }
@@ -317,37 +303,47 @@ footer {
 @media (min-width: 768px) {
     /*DESKTOP*/
 
-    .search-bar-input {
-        border: 0.5px solid #666666;   
-        width: 170px;
-        padding: 3px 3px 3px 3px; 
+    /*BOX X 4*/
+    article {
+        width: 22%; 
+    }
+
+    /*animaciones*/
+
+    main section article .product {
+        font-weight: 300; 
+        padding: 8px;
+        display: none; 
+    }
+
+    main section article:hover {
+        box-shadow : 0px 0px 10px rgb(100, 100, 100);
+
+    }
+
+    main section article:hover .product {
+        display: blocK;
+    }
+
+    main article i {
+        transition: transform 1000ms; 
+    }
+
+    main article:hover i {
+        transform :rotateZ(-30deg);
     }
     
+    /*SEARCH BAR*/
 
-    .search-bar{
-        position: initial;
+    .container-search-bar {
+        width: 33%; 
+        margin-top: 11px;
     }
 
     .search-bar-input {
         width: calc(100% - 30px);
         margin-top: 8px;
         margin-left: 5px; 
-    }
-    
-    .container-search-bar button{
-        position: initial;
-    }
-    
-
-    button i {
-        border: 0.5px solid #666666;
-        padding: 3px 3px 3px 3px;  
-        background:  #ebebeb;
-    }
-    
-  
-    article {
-        width: 22%; 
     }
 
     .burger-menu {
@@ -358,6 +354,7 @@ footer {
         display: flex;
         justify-content: space-between;
     }
+    
     
     .container-copy-header {
         width: 33%; 
@@ -376,11 +373,7 @@ footer {
         width: 33%; 
     }
 
-    .container-search-bar {
-        width: 33%; 
-        background: none;
-        margin-top: 11px
-    }
+    
 
     .main-nav-bar {
         display: flex; 
@@ -395,5 +388,27 @@ footer {
         margin: 0 15px;
     }
 
+      /*FOOTER*/
+    /*animation*/
+    footer section i:hover {
+        color: #12005e; 
+    }
+    
+    /*position footer*/
+
+    footer .copyright {
+        text-align: center;
+        width: 100%;
+    }
+
+    footer div{
+        margin: 0 auto;
+        max-width: 1024px;
+        display:flex;
+        flex-basis: 100%;
+        flex-direction: row;
+    }
+
 }
 
+  

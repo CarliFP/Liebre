@@ -26,6 +26,12 @@ app.get('/register', (req, res) => {
 });
 
 
+app.get('/login', (req, res) => {
+    res.sendFile(path.resolve('./views/login.html'));
+    //console.log ();
+});
+
+
 app.get('/404', (req, res) => {
       res.send("Error página no encontrada", 404);
     //console.log ();
