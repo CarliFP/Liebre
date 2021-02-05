@@ -84,7 +84,7 @@
                     <input class="personal-information-input" type="text" name="name" placeholder="Nombre y apellido">
                     <input class="personal-information-input" type="text" name="user" placeholder="Nombre de usuario">
                     <input class="personal-information-input" type="email" name="email" placeholder="E-mail">
-                    <input class="personal-information-input" type="date" name="birth_date" id="birth_date">
+                    <input class="personal-information-input" type="date" name="birth_date" id="birth_date" max="2022-12-31">
                     <input class="personal-information-input" type="text" name="addres" placeholder="Domicilio">
                 </div>
 
@@ -134,7 +134,7 @@
 
                 <div class = "file-upload">
                     <!-- esto hace que se oculte y se pueda customizar, sino reaparece-->
-                    <input type="file" id="actual-btn" hidden/>
+                    <input type="file" id="actual-btn" accept=".jpg" multiple hidden/>
                     <!--boton custom-->
                     <label class ="btn-file" for="actual-btn">Seleccionar avatar</label>
                     <!--advertencia de archivo no subido-->
