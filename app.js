@@ -12,6 +12,7 @@ app.listen (8000, () => {
     console.log ("Levantando un servidor con Express: Puerto 8000")
 });
 
+/*
 app.get('/', (req, res) => {
     //res.sendFile(path.join(__dirname, '/views/index.html'));
     res.sendFile(path.resolve('./views/index.html'));
@@ -35,4 +36,8 @@ app.get('/login', (req, res) => {
 app.get('/404', (req, res) => {
       res.send("Error página no encontrada", 404);
     //console.log ();
-}); 
+}); */
+
+app.listen(process.env.PORT) || 3000, function() {
+    console.log('Servidor corriendo en el puerto 3000'); 
+}
