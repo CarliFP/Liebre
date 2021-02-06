@@ -10,7 +10,7 @@ app.listen(process.env.PORT || 3000, function() {
 })
 
 
-app.get('/index', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.resolve('./views/index.html'));
 });
 
