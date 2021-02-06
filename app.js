@@ -8,9 +8,9 @@ const app = express();
 
 app.use(express.static("public"));
 
-app.listen (8000, () => {
-    console.log ("Levantando un servidor con Express: Puerto 8000")
-});
+/*app.listen (3000, () => {
+    console.log ("Levantando un servidor con Express: Puerto 3000")
+});*/
 
 /*
 app.get('/', (req, res) => {
@@ -38,6 +38,6 @@ app.get('/404', (req, res) => {
     //console.log ();
 }); */
 
-app.listen(process.env.PORT) || 3000, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log('Servidor corriendo en el puerto 3000'); 
-}
+})
